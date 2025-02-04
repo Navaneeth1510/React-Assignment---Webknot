@@ -6,7 +6,7 @@ export default function SelectorComponent({ addMoodEntry }) {
 
     return (
         <div className="flex flex-col justify-center items-center p-5 flex-grow">
-            <div className="formborder border-3 w-full sm:w-150 flex flex-col justify-items-center align-middle rounded-xl justify-center items-center p-5 flex-grow-0">
+            <div className="formborder border-2 w-full sm:w-150 flex flex-col justify-items-center align-middle rounded-xl justify-center items-center p-5 flex-grow-0">
                 <div className="w-full rounded-xl bg-blue-200 p-5">
                     <h1 className="text-3xl font-bold text-gray-800">Mood Entry</h1>
                 </div>
@@ -15,7 +15,7 @@ export default function SelectorComponent({ addMoodEntry }) {
                         Your current mood
                     </label>
                     <select name="mood-entry" id="mood-entry"
-                        className="border-3 p-3 text-center justify-items-center rounded-xl bg-white w-full sm:w-35 text-center text-start text-xl my-2" value={item}
+                        className="border-2 p-3 text-center justify-items-center rounded-xl bg-white w-full sm:w-35 text-center text-start text-xl my-2" value={item}
                         onChange={(e) => setItem(e.target.value)} 
                     >
                         <option value="">--- Select ---</option>
